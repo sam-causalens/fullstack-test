@@ -27,7 +27,7 @@ interface ModelResponse {
     }
 }
 
-export default function runModel(data: Data, target: string): ModelResponse {
+export function runModel(data: Data, target: string): ModelResponse {
     const keys = Object.keys(data[0]);
 
     if (target === 'index' || !(target in keys)) {

@@ -30,4 +30,4 @@ function runModel(data) {
     };
 }
 
-module.exports = runModel
+module.exports = { runModel }
