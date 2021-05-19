@@ -2,7 +2,7 @@
 function runModel(data) {
     const keys = Object.keys(data[0]);
 
-    if (target === 'index' || !(target in keys)) {
+    if (target === 'index' || !keys.find(key => key === target)) {
         throw new Error(`Invalid target: ${target} selected for model`);
     }
 
