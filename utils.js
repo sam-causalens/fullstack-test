@@ -1,5 +1,5 @@
 
-function runModel(data) {
+function runModel(data, target) {
     const keys = Object.keys(data[0]);
 
     if (target === 'index' || !keys.find(key => key === target)) {
